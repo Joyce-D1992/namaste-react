@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "This is Namaste React course",
   "scripts": {
+    "start": "parcel helloworld_react.html",
+    "build": "parcel build helloworld_react.html",
     "test": "jest"
   },
   "repository": {
