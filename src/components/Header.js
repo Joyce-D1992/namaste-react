@@ -12,7 +12,7 @@ const Header = () => {
     //console.log("Header Render");
 
     useEffect(() => {
-        console.log("useEffect called");
+        //console.log("useEffect called");
     }, [btnNameReact]);
 
     return (
