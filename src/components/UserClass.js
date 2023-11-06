@@ -38,19 +38,19 @@ class UserClass extends React.Component {
     componentDidMount () {
 
         this.timer = setInterval (() => {
-            console.log("Namaste React OP")
+            //console.log("Namaste React OP")
         }, 1000);
     }
 
     componentDidUpdate() {
-        console.log("Component Did Update");
+        //console.log("Component Did Update");
     }
 
     componentWillUnmount() {
 
         clearInterval(this.timer);
 
-        console.log("Component will unmount");
+        //console.log("Component will unmount");
     }
 
     render() {
@@ -59,7 +59,7 @@ class UserClass extends React.Component {
         // const {count, count2} = this.state;
        // const {count} = this.state;
 
-        console.log(this.props.name +"Child Render");
+       // console.log(this.props.name +"Child Render");
 
         const {name,location, avatar_url} = this.state.userInfo;
 

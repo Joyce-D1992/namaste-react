@@ -8,17 +8,17 @@ const User = ({name}) => {
     useEffect(() =>{
         //API calls
         const timer = setInterval (() => {
-            console.log("Namaste React OP")
+            //console.log("Namaste React OP")
         }, 1000);
-        console.log("useEffect");
+        //console.log("useEffect");
 
         return () => {
             clearInterval(timer);
-            console.log("useEffect return");
+            //console.log("useEffect return");
 
         }
     }, []);
-    console.log("Render");
+    //console.log("Render");
 
     return (
         <div className="user-card">
