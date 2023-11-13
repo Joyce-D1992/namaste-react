@@ -6,7 +6,7 @@ const ItemList = ({items, dummy}) => {
     //console.log(items);
     //console.log(dummy);
 
- const dispatch = useDispatch();   
+    const dispatch = useDispatch();   
  
 //   const handleAddItem = () => {
 //     // Dispatch an action
