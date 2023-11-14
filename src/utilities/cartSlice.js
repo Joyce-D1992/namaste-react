@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 
 const cartSlice = createSlice({
     name: 'cart',
@@ -23,8 +23,20 @@ const cartSlice = createSlice({
         removeItem: (state) => {
             state.items.pop();
         },
+        //originalState = { items: ["pizza"] }
         clearCart: (state) => {
-            state.items.length = 0; // []
+           // state = ["joyce"]; // not mutating the state just adding reference to it
+
+        //    console.log(state); // ["pizza"]
+        //    console.log(current(state)); // reading state
+        //    state = []; // local copy of state not updating the originalState
+        //    console.log(state);
+
+        // RTK - either mutate the existing state or return a new state
+
+          //state.items.length = 0; //originalState = []
+
+           return { items: [] }; // This new object will be replaced inside originalState = { items: [] }
         }
 
     }
